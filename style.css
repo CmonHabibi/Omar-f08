@@ -1,0 +1,60 @@
+body {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:auto auto 1fr;
+  grid-template-areas:"header header"
+                      "section section"
+                      "aside aside"
+                      "footer footer";
+  grid-gap:2px;
+}
+
+@media screen and (min-width:600px) { /* OBS kan stå annat här */
+  body {
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:"header header"
+                        "section aside"
+                        "footer footer";
+    grid-gap:2px;
+  }
+}
+h1,h2{
+  margin: 20px;
+}
+p {
+  margin: 20px;
+}
+
+body {
+}
+
+header{
+  background-color:red ;
+  grid-area: header;
+
+}
+
+section {
+  grid-area: section;
+}
+article{
+  background-color: brown;
+
+}
+aside {
+  background-color:blue;
+  grid-area: aside;
+}
+
+footer {
+  background-color: green;
+  grid-area: footer;
+}
+
+
+img#sea {
+  max-width: 100%;
+}
+
+img#html {
+}
